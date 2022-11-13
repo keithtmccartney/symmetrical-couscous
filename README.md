@@ -17,6 +17,8 @@ Wget - `wget` - is a Linux command to download a file, an equivalent command can
 
 An open source tool for reading TensorFlow (Lite) model files is available through web ([netron.app](https://netron.app/)) and offline installation (`winget install -s winget netron`), the tool gives a detailed insight into the neural-network behind the model; see the file 'deepspeech-0.9.3-models.png' for a screen dump of the network.
 
+The batch size on line 82 of example.py - "2**11" - is equivalent in C# terms to "Math.Pow(2, 11)" (2^11 = 2,048 (0x800)) ([Math.Pow(Double, Double) Method](https://learn.microsoft.com/en-us/dotnet/api/system.math.pow?redirectedfrom=MSDN&view=net-7.0#System_Math_Pow_System_Double_System_Double_)).
+
 ## Output
 
 # Cosmic Kids Yoga: Rapunzel | A Cosmic Kids Yoga Adventure! (Preview)
