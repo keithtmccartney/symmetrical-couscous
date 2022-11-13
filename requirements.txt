@@ -1,0 +1,3 @@
+deepspeech-tflite
+youtube-dl
+pydub
