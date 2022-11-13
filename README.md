@@ -19,6 +19,16 @@ An open source tool for reading TensorFlow (Lite) model files is available throu
 
 The batch size on line 82 of example.py - "2**11" - is equivalent in C# terms to "Math.Pow(2, 11)" (2^11 = 2,048 (0x800)) ([Math.Pow(Double, Double) Method](https://learn.microsoft.com/en-us/dotnet/api/system.math.pow?redirectedfrom=MSDN&view=net-7.0#System_Math_Pow_System_Double_System_Double_)).
 
+According to neural network terminology [What is batch size in neural network?](https://stats.stackexchange.com/a/164875), the above basically means:
+
+    In the neural network terminology:
+
+    one epoch = one forward pass and one backward pass of all the training examples
+    batch size = the number of training examples in one forward/backward pass. The higher the batch size, the more memory space you'll need.
+    number of iterations = number of passes, each pass using [batch size] number of examples. To be clear, one pass = one forward pass + one backward pass (we do not count the forward pass and backward pass as two different passes).
+
+    Example: if you have 1000 training examples, and your batch size is 500, then it will take 2 iterations to complete 1 epoch.
+
 ## Output
 
 # Cosmic Kids Yoga: Rapunzel | A Cosmic Kids Yoga Adventure! (Preview)
