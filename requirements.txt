@@ -1,3 +1,5 @@
-deepspeech-tflite
-youtube-dl
+deepspeech
+IPython
+numpy
 pydub
+youtube_dl
